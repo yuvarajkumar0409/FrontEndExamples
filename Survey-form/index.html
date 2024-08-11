@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <h1>Survey Form</h1>
+            </div>
+            <form id="surveyForm">
+                <div class="form">
+                    <label class="header">Name:</label>
+                    <input type="text" placeholder="eg.Yuvaraj" required />
+                </div>
+                <div class="form">
+                    <label class="header">Email:</label>
+                    <input type="email" placeholder="abc@gmail.com" required />
+                </div>
+                <div class="form">
+                    <label class="header">Age:</label>
+                    <input type="number" required />
+                </div>
+                <div class="form gender">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" required /><label class="name">Male</label>
+                    <input type="radio" name="gender" required /><label class="name">Female</label>
+                    <input type="radio" name="gender" required /><label class="name">Others</label>
+                </div>
+                <div class="form">
+                    <label class="header">Degree:</label>
+                    <select class="degree">
+                        <option>B.A</option>
+                        <option>B.Com</option>
+                        <option>B.Tech</option>
+                        <option>B.Sc</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label class="header">Area of Interest:</label>
+                    <input type="checkbox" /><label class="course">C/C++</label><br>
+                    <input type="checkbox" /><label class="course">Python</label><br>
+                    <input type="checkbox" /><label class="course">Java</label><br>
+                    <input type="checkbox" /><label class="course">HTML</label><br>
+                    <input type="checkbox" /><label class="course">Others</label><br>
+                </div>
+                <div class="form">
+                    <label class="header">Mobile No.:</label>
+                    <input type="number" required />
+                </div>
+                <div class="form">
+                    <label class="header">Address:</label>
+                    <input type="text" required />
+                </div>
+                <div class="form">
+                    <label class="header">Feedback:</label>
+                    <textarea rows="3" cols="25" class="area" required ></textarea>
+                </div>
+                <div id="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyD5MLdtozNkOcWF1ye4-CLCH1Hh2B2CfeU",
+              authDomain: "survey-form0409.firebaseapp.com",
+              projectId: "survey-form0409",
+              storageBucket: "survey-form0409.appspot.com",
+              messagingSenderId: "816324576100",
+              appId: "1:816324576100:web:6727144b12ffa769ab7071",
+              measurementId: "G-BXSKB66Q3D"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </body>
+</html>

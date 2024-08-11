@@ -1,0 +1,27 @@
+*{
+    font-family: 'Poppins', sans-serif;    
+  }
+  .banner{
+    background-image: url(./images/bg-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    color: white;
+  }
+  .skillicons{
+    font-size: 50px;
+  }
+  .skillcontent{
+    text-decoration: none;
+    color: green;
+  }
+  .icons{
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50px;
+    width:50px;
+    height:50px;
+    text-align: center;
+    padding:10px;
+    margin-right: 30px;
+  }
